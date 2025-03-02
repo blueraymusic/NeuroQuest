@@ -61,7 +61,8 @@ We developed **NeuroQuest** using:
 
 
 
-Check out the [demo video]([link-to-video](https://youtu.be/eGeRFgIf9oQ)) to see **NeuroQuest** in action!
+Check out the demo video: https://youtu.be/eGeRFgIf9oQ
+
 
 
 ## Screenshots
