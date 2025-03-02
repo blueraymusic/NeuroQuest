@@ -42,16 +42,21 @@ We developed **NeuroQuest** using:
 
 ## Installation
 1. Clone the repository.
-2. Install dependencies:
+   ```bash
+    git clone https://github.com/blueraymusic/NeuroQuest/
+    cd NeuroQuest
+    ```
+   
+3. Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the game:
+4. Run the game:
     ```bash
     cd code
     python main.py
     ```
-4. Important:
+5. Important:
     Run inside "Code" as it host the root files
 
 
