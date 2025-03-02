@@ -51,14 +51,19 @@ We developed **NeuroQuest** using:
     cd code
     python main.py
     ```
+4. Important:
+    Run inside "Code" as it host the root files
 
 
 
-Check out the [demo video](link-to-video) to see **NeuroQuest** in action!
+Check out the [demo video]([link-to-video](https://youtu.be/eGeRFgIf9oQ)) to see **NeuroQuest** in action!
+
 
 ## Screenshots
-![Game Screenshot 2]([link-to-image-2](https://github.com/user-attachments/assets/7bedde04-55a2-4fa8-9f1d-6aee8f020c95))
-![Game Screenshot 2]([[link-to-image-2]([https://github.com/user-attachments/assets/7bedde04-55a2-4fa8-9f1d-6aee8f020c95](https://github.com/user-attachments/assets/65ed2c4d-303d-4d1d-af46-051b205dfaac)](https://github.com/user-attachments/assets/65ed2c4d-303d-4d1d-af46-051b205dfaac))
+<img width="1252" alt="a" src="https://github.com/user-attachments/assets/b9585cb4-741c-49a0-baef-dab6105dcdd4" />
+
+<img width="873" alt="bg" src="https://github.com/user-attachments/assets/d09aae8e-7989-480e-bc8b-94d5b556ee53" />
+
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
