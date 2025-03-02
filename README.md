@@ -62,6 +62,8 @@ Check out the [demo video]([link-to-video](https://youtu.be/eGeRFgIf9oQ)) to see
 ## Screenshots
 <img width="1252" alt="a" src="https://github.com/user-attachments/assets/b9585cb4-741c-49a0-baef-dab6105dcdd4" />
 
+-----
+
 <img width="873" alt="bg" src="https://github.com/user-attachments/assets/d09aae8e-7989-480e-bc8b-94d5b556ee53" />
 
 
