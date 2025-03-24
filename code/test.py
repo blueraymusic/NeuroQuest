@@ -29,7 +29,7 @@ class ChatBox:
         self.player_stats = {"kills": 0, "level": 1, "xp": 0}
 
         # Configure Gemini API
-        API_KEY = "API_gemini"  # Use environment variable for security
+        API_KEY = "AIzaSyDY6ylgqJc0YZUVe7YEamBK29IKA7_wl_Q"  # Use environment variable for security
         if not API_KEY:
             raise ValueError("API Key not found! Set GEMINI_API_KEY as an environment variable.")
         

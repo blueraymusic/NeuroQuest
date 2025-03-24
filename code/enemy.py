@@ -143,7 +143,11 @@ class Enemy(Entity):
 	def increment_kills(self):
 		global killercount 
 		killercount += 1
+		with open("high_score.txt", "w") as file:
+			file.write(str(killercount))
 		print(f"Enemies killed: {killercount}")  
+        
+		
 
 	def check_death(self):
 		global killercount 

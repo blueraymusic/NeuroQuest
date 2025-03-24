@@ -1,0 +1,16 @@
+{
+    "player_stats": {
+        "kills": 0,
+        "level": 1,
+        "xp": 0
+    },
+    "habits": {
+        "frequent_places": [],
+        "killcount_trends": [
+            0
+        ],
+        "quests_completed": [
+            "give a quest"
+        ]
+    }
+}

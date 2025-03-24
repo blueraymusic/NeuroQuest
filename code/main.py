@@ -46,31 +46,25 @@ class Menu:
         self._draw_button(self.quit_button, "QUIT", (255, 99, 71), (255, 255, 255), (255, 69, 0), scale_factor=1.1, glow_color=(255, 99, 71))  # Tomato Red for QUIT, Hover Color: Orange Red
     
     def _draw_button(self, button_rect, text, button_color, text_color, hover_color, scale_factor=1.1, glow_color=None):
-        # Check if the mouse is hovering over the button
         mouse_pos = pygame.mouse.get_pos()
         is_hovered = button_rect.collidepoint(mouse_pos)
         
-        # If hovered, change color to hover color
         if is_hovered:
-            button_color = hover_color  # Change color on hover
-            # Scale up the button size when hovered (animation effect)
+            button_color = hover_color  
             current_width = int(button_rect.width * scale_factor)
             current_height = int(button_rect.height * scale_factor)
             scaled_rect = pygame.Rect(button_rect.centerx - current_width // 2, button_rect.centery - current_height // 2, current_width, current_height)
         else:
             scaled_rect = button_rect
         
-        # Create a surface for the button with rounded corners
         button_surface = pygame.Surface(scaled_rect.size, pygame.SRCALPHA)
         button_surface.fill((0, 0, 0, 0))  # Clear, no background fill
         
         pygame.draw.rect(button_surface, button_color, button_surface.get_rect(), border_radius=20)
         
-        # Optionally, add glowing effect around the button
         if glow_color:
             pygame.draw.rect(self.screen, glow_color, scaled_rect.inflate(20, 20), border_radius=25, width=5)  # Glowing effect around the button
         
-        # Create the button text
         text_surface = self.font.render(text, True, text_color)
         text_rect = text_surface.get_rect(center=scaled_rect.center)
         
@@ -92,7 +86,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGTH))  
-        pygame.display.set_caption('MS&T Land')
+        pygame.display.set_caption('NeuralQuest')
         self.clock = pygame.time.Clock()
         self.level = Level()
         self.chat_box = ChatBox(x=20, y=HEIGTH - 120, width=WIDTH - 40, height=120)
@@ -124,7 +118,7 @@ class Game:
             elif self.level.player.health <= 0:  
                 if self.game_over_screen is None:
                     self.game_over_screen = GameOver(self.level.player)  
-                self.game_over_screen.display_gameover()  
+                self.game_over_screen.run()
             else:
                 self.level.run()
                 self.chat_box.draw(self.screen)
